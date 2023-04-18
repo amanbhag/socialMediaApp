@@ -13,7 +13,7 @@ const FriendListWidget = ({ userId }) => {
 
   const getFriends = async () => {
     const response = await fetch(
-      `http://localhost:8080/user/${userId}/friends`,
+      `https://sociopedia-qcvc.onrender.com/user/${userId}/friends`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

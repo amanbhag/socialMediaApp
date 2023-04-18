@@ -32,7 +32,7 @@ const Friend = ({
 
   const patchFriend = async () => {
     const response = await fetch(
-      `http://localhost:8080/user/${_id}/${friendId}`,
+      `https://sociopedia-qcvc.onrender.com/user/${_id}/${friendId}`,
       {
         method: "PATCH",
         headers: {

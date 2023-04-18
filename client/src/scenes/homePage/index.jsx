@@ -10,7 +10,6 @@ import FriendListWidget from "scenes/widgets/FriendListWidget";
 const HomePage = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
   const { _id, cloudinary_id } = useSelector((state) => state.user);
-  console.log("cloudinary_id: ", cloudinary_id);
 
   return (
     <Box>

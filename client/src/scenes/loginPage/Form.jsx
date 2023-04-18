@@ -66,7 +66,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "http://localhost:8080/auth/user/register/",
+      "https://sociopedia-qcvc.onrender.com/auth/user/register/",
       {
         method: "POST",
         body: formData,
@@ -84,7 +84,7 @@ const Form = () => {
 
   const login = async (values, onSubmitProps) => {
     const loggedInResponse = await fetch(
-      "http://localhost:8080/auth/user/login",
+      "https://sociopedia-qcvc.onrender.com/auth/user/login",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -101,6 +101,7 @@ const Form = () => {
           token: loggedIn.token,
         })
       );
+
       navigate("/home");
     }
   };
